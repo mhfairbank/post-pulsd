@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>PostPulsd</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<head>
+	  <title>PostPulsd</title>
+	  <%= stylesheet_link_tag    'application', media: 'all' %>
+	  <%= javascript_include_tag 'application' %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div class="navbar navbar-default">
+		  <div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		    </button>
+		    <a class="navbar-brand" href="posts/index">Post Pulsd</a>
+		  </div>
+		  <div class="navbar-collapse collapse navbar-responsive-collapse">
+		    <ul class="nav navbar-nav">
+		      <li class="active"><a href="posts/index">Home</a></li>
+		      <li><%= link_to("New Post", new_post_path) %></li>
+		    </ul>
+		    <form class="navbar-form navbar-left">
+		    </form>
+		    <ul class="nav navbar-nav navbar-right">
+		    </ul>
+		  </div>
+		</div>
 
-<%= yield %>
+		<%= yield %>
 
-</body>
+	</body>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </html>
