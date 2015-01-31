@@ -4,59 +4,31 @@
       <div class="well bs-component">
         <%= form_for @post, html: { class: "form-horizontal"}  do |f| %>
 				  <fieldset>
-            <legend>Legend</legend>
-					  <label for="post_venue_name" class="col-lg-2 control-label">Venue</label>
+            <legend>New Pulsd Post</legend>
+					  <label for="post_venue" class="col-lg-2 control-label">Venue</label>
 	          <div class="col-lg-10">
-					  	<%= f.text_field :venue_name, class: "form-control", placeholder: "Venue" %><br />
+					  	<%= f.text_field :venue, class: "form-control", placeholder: "Venue" %><br />
 					  </div>
-
 					  <label for="post_precis" class="col-lg-2 control-label">Precis</label>
 	          <div class="col-lg-10">
 					  	<%= f.text_field :precis, class: "form-control", placeholder: "Precis" %><br />
 					  </div>
-
+					  <label for="post_address" class="col-lg-2 control-label">Address</label>
+	          <div class="col-lg-10">
+					  	<%= f.text_field :address, class: "form-control", placeholder: "Address" %><br />
+					  </div>
+					  <label for="post_price" class="col-lg-2 control-label">Price</label>
+	          <div class="col-lg-10">
+					  	<%= f.text_field :price, class: "form-control", placeholder: "Price" %><br />
+					  </div>
+					  <label for="post_description" class="col-lg-2 control-label">Description</label>
+	          <div class="col-lg-10">
+					  	<%= f.text_area :description, class: "form-control", placeholder: "Description" %><br />
+					  </div>
 					  <%= f.submit "Submit", class: "btn btn-primary" %>
 					 </fieldset>
 				<% end %>
-
-
-        <form class="form-horizontal">
-          <fieldset>
-            <legend>Legend</legend>
-            <div class="form-group">
-              <label for="inputEmail" class="col-lg-2 control-label">Email</label>
-              <div class="col-lg-10">
-                <input type="text" class="form-control" id="inputEmail" placeholder="Email">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="inputPassword" class="col-lg-2 control-label">Password</label>
-              <div class="col-lg-10">
-                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox"> Checkbox
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="textArea" class="col-lg-2 control-label">Textarea</label>
-              <div class="col-lg-10">
-                <textarea class="form-control" rows="3" id="textArea"></textarea>
-                <span class="help-block">A longer block of help text that breaks onto a new line and may extend beyond one line.</span>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="col-lg-10 col-lg-offset-2">
-                <button class="btn btn-default">Cancel</button>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
-            </div>
-          </fieldset>
-        </form>
       </div>
     </div>
   </div>
 </div>
-

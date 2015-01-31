@@ -14,13 +14,14 @@
 ActiveRecord::Schema.define(version: 20150131053341) do
 
   create_table "posts", force: :cascade do |t|
-    t.string   "venue_name"
+    t.string   "venue"
     t.string   "precis"
-    t.integer  "price"
-    t.string   "description"
-    t.string   "location"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.string   "price"
+    t.text     "description"
+    t.string   "address"
+    t.boolean  "is_new",      default: true
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
   end
 
 end
