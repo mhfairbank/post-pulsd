@@ -15,9 +15,9 @@ ActiveRecord::Schema.define(version: 20150131053341) do
 
   create_table "posts", force: :cascade do |t|
     t.string   "venue"
-    t.string   "precis"
+    t.string   "description"
     t.string   "price"
-    t.text     "description"
+    t.text     "details"
     t.string   "address"
     t.boolean  "is_new",      default: true
     t.datetime "created_at",                 null: false

@@ -18,6 +18,6 @@ class PostsController < ApplicationController
 
 	private
     def post_params
-      params.require(:post).permit(:venue, :precis, :address, :price, :description)
+      params.require(:post).permit(:venue, :details, :address, :price, :description)
     end
 end

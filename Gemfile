@@ -44,10 +44,25 @@ group :development, :test do
 end
 
 group :test, :development do
+  # gem 'rspec-rails'
+  # gem 'capybara'
+  # gem 'selenium-webdriver'
+  # gem 'better_errors'
+  # gem 'sprockets_better_errors'
+  # gem 'binding_of_caller'
+  # gem 'factory_girl_rails'
+  # gem 'simplecov'
+  # gem 'database_cleaner'
   gem 'sqlite3'
+  # gem 'pry'
+  # gem 'guard-rspec', require: false
+  # gem 'thin'
 end
 
 group :production do
   gem 'pg'
+  # gem 'google-analytics-rails'
   gem 'rails_12factor'
 end
+
+# gem 'bootstrap-sass', '~> 3.1.1'
