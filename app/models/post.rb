@@ -3,6 +3,7 @@ require 'open-uri'
 class Post < ActiveRecord::Base
 	def self.scrape_pulsd
 		# Without ids, scraping is based on direct children and styles
+		counter = 0
 		listings_page = Nokogiri::HTML(open("http://www.pulsd.com/new-york"))
 		listings_array = listings_page.css(".pulse-box a")
 		listings_array.each do |listing|
@@ -29,8 +30,10 @@ class Post < ActiveRecord::Base
 					post[:details] = post_page.css(".grid_14 > div > .pjsLinkToNewTab > p").text
 				end
 				Post.create(post)
+				counter += 1
 			end
 		end
+		counter
 	end
 end
 
