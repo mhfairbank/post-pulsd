@@ -6,9 +6,10 @@ class Post < ActiveRecord::Base
 		counter = 0
 		listings_page = Nokogiri::HTML(open("http://www.pulsd.com/new-york"))
 		listings_array = listings_page.css(".pulse-box a")
+		existing_urls = Post.all.pluck(:url)
 		listings_array.each do |listing|
 			post_url = "http://www.pulsd.com" + listing.attributes["href"].value
-			unless Post.all.pluck(:url).include?(post_url)
+			unless existing_urls.include?(post_url)
 				post_page = Nokogiri::HTML(open(post_url))
 				post = Hash.new
 				post[:url] = post_url
