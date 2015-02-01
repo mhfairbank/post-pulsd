@@ -54,7 +54,7 @@ group :test, :development do
   # gem 'simplecov'
   # gem 'database_cleaner'
   gem 'sqlite3'
-  # gem 'pry'
+  gem 'pry'
   # gem 'guard-rspec', require: false
   # gem 'thin'
 end
@@ -65,4 +65,8 @@ group :production do
   gem 'rails_12factor'
 end
 
+# Use nokogiri
+gem 'nokogiri', '~> 1.6.6.2'
 # gem 'bootstrap-sass', '~> 3.1.1'
+
+
