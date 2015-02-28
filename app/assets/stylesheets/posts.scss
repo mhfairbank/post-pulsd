@@ -1,3 +1,35 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.navbar-logo {
+	padding: 0px 0px;
+}
+
+.navbar {
+	background: seagreen;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: #56CF8B;
+}
+
+.alt-hover{
+	font-family: 'Abel', sans-serif;
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.beam-title {
+	font-family: 'Abel', sans-serif;
+	font-weight: 300;
+	font-size: 48px;
+}
+
+.beam-body {
+	font-family: 'Abel', sans-serif;
+	font-weight: 100;
+	font-size: 48px;
+}

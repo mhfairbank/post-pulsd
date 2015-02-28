@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	  <title>PostPulsd</title>
+	  <title>Beam</title>
 	  <%= stylesheet_link_tag    'application', media: 'all' %>
 	  <%= javascript_include_tag 'application' %>
 	  <%= csrf_meta_tags %>
+	  <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<div class="navbar navbar-default">
 		  <div class="navbar-header">
-		    <%= link_to("Post Pulsd", root_path , class: "navbar-brand") %>
+		    <%= link_to image_tag("http://d24wuq6o951i2g.cloudfront.net/img/events/id/204/2047527/assets/c67.Logo-4.png", class: "navbar-brand navbar-logo"), root_path , class: "navbar-brand navbar-logo" %>
 		  </div>
 		  <div class="navbar-collapse collapse navbar-responsive-collapse">
 		    <ul class="nav navbar-nav">
-		      <li><%= link_to("Home", root_path) %></li>
-		      <li><%= link_to("New Post", new_post_path) %></li>
+		      <li><%= link_to("Home", root_path, class: "alt-hover") %></li>
+		      <li><%= link_to("New Post", new_post_path, class: "alt-hover") %></li>
 		    </ul>
 		  </div>
 		</div>
