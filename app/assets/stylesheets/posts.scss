@@ -7,7 +7,7 @@
 }
 
 .navbar {
-	background: seagreen;
+	background: rgba(43, 134, 83, 0.8);
 }
 
 .navbar-default .navbar-nav > li > a:hover,
@@ -17,19 +17,23 @@
 }
 
 .alt-hover{
-	font-family: 'Abel', sans-serif;
-	font-size: 17px;
-	font-weight: 600;
+	font-family: 'Vollkorn', 'Arvo', 'Poly', 'Abel', sans-serif;
+	font-size: 25px;
+	font-weight: 400;
 }
 
 .beam-title {
-	font-family: 'Abel', sans-serif;
-	font-weight: 300;
-	font-size: 48px;
+	font-family: 'Vollkorn', 'Arvo', 'Poly', 'Abel', sans-serif;
+	font-weight: 400;
+	font-size: 64px;
 }
 
 .beam-body {
-	font-family: 'Abel', sans-serif;
-	font-weight: 100;
+	font-family: 'Vollkorn', 'Arvo', 'Poly', 'Abel', sans-serif;
+	font-weight: 400;
 	font-size: 48px;
+}
+
+.top-container {
+	margin-top: 100px;
 }
