@@ -10,6 +10,7 @@
   margin: 0 0 1em;
   font-size: 16px;
   font-family: 'Vollkorn', 'Arvo', 'Poly', 'Abel', sans-serif;
+  border-radius: 2px;
 }
 .user-form-input:focus{
 	border-color: #4ab6a6;
@@ -21,7 +22,7 @@
 }
 .user-form-btn{
 	background-color: #4ab6a6;
-  border-radius: 0;
+  border-radius: 2px;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -35,4 +36,8 @@
 .user-form-btn:hover{
 	background-color: #69c3b6;
   color: #fff;
+}
+
+body{
+  background: url("http://static.pexels.com/wp-content/uploads/2014/07/black-and-white-bridge-grids-1832.jpg") no-repeat center;
 }
