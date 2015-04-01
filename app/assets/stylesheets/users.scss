@@ -1,0 +1,38 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.user-form-input{
+	margin-bottom: 0;
+  min-width: 250px;
+  padding: 9px 10px;
+  border: 1px solid #e5e5e5;
+  margin: 0 0 1em;
+  font-size: 16px;
+  font-family: 'Vollkorn', 'Arvo', 'Poly', 'Abel', sans-serif;
+}
+.user-form-input:focus{
+	border-color: #4ab6a6;
+  box-shadow: none;
+  outline: none;
+}
+.user-form-input::selection{
+	background: #69c3b6;
+}
+.user-form-btn{
+	background-color: #4ab6a6;
+  border-radius: 0;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  margin-left: 5px;
+  padding: 1em 1.5em;
+  vertical-align: middle;
+  font-family: 'Vollkorn', 'Arvo', 'Poly', 'Abel', sans-serif;
+}
+.user-form-btn:hover{
+	background-color: #69c3b6;
+  color: #fff;
+}

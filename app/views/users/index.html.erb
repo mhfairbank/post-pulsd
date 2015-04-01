@@ -3,7 +3,10 @@
 		<div class="col-md-7">
 			<h1 class="beam-title">Beam.</h1>
 			<p class="beam-body">A new, amazing way to bank.</p>
-			
+			<%= form_for @user, html: { class: "user-form"}  do |f| %>
+				<%= f.email_field :email_address, class: "user-form-input", placeholder: "Email Address" %>
+				<%= f.submit "Sign Up", class: "user-form-btn" %>
+			<% end %>
 		</div>
 		<div class="col-md-4 col-md-push-1">
 			<img src="https://brokerage-static.s3.amazonaws.com/assets/marketing/images/home/phone_frame_light.png">
